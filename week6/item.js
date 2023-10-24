@@ -1,4 +1,4 @@
-// week6/item.js
+
 import React from 'react';
 
 const Item = ({ name, quantity, category }) => {
