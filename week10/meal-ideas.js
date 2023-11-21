@@ -24,7 +24,7 @@ export default function MealIdeas({ingredient}) {
     return (
         <div>
             <h1 className="ml-10 text-4xl">Meal Ideas</h1>
-            <div className="ml-10 text-xl">
+            <div className="ml-10 text-yellow-500 text-xl">
             {meals.length === 0 && <p>No meals found</p>}
             <ul>
                 {meals.map((meal) => (

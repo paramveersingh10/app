@@ -1,14 +1,10 @@
-
-import React from 'react';
-
-const Item = ({ name, quantity, category,onSelect}) => {
-  return (
-    <li className="bg-white rounded-lg shadow-lg p-4 mb-4" onClick={()=>onSelect(name)}>
-      <div className="font-semibold text-lg">{name}</div>
-      <div className="text-gray-600 text-sm">Category: {category}</div>
-      <div className="text-gray-600 text-sm">Quantity: {quantity}</div>
-    </li>
+export default function Item({name,quantity,category,onSelect}){
+  return(
+      <div className=" bg-gray-500 w-full max-w-xs m-4 p-2 rounded hover:scale-105 duration-75" >
+          <li className="list-none"  onClick={() => onSelect(name)}>
+              <p className="font-semibold text-lg text-yellow-400">{name}</p>
+              <p>Buy {quantity} in {category}</p>
+          </li>
+      </div>
   );
-};
-
-export default Item;
+}
